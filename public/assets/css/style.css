@@ -39,4 +39,46 @@
     padding: 6px;
 }
 
+.form-login{
+    padding-top: 10%;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.form-login fieldset{
+    border: 1px solid #dee2e6;
+}
+
+.form-login fieldset legend{
+    background-color: #dee2e6;
+    font-size: 15px;
+    font-weight:bold;
+    padding: 10px;
+    width: 30%;
+}
+
+.form-login fieldset .row{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 4%;
+}
+
+.form-login fieldset .row .col{
+padding-bottom: 3%;
+}
+
+.form-login .row .col .create{
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.form-login .row .forget{
+    text-align: right;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
 

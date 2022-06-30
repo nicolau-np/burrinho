@@ -26,7 +26,7 @@ $type = app()->view->getSections()['type'];
     <div class="container">
 
         @if ($type == 'login')
-
+            @yield('content')
         @else
             <div class="menu">
                 <ul>

@@ -20,5 +20,5 @@ Route::livewire('/about', "about");
 Route::livewire('/chat', "user.chat");
 
 Route::group(['prefix' => "user"], function () {
-    Route::livewire('/login', "user.login")->name('login');
+    Route::livewire('/login', "user.login")->name('login')->middleware('guest');
 });
