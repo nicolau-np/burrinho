@@ -29,6 +29,7 @@ $type = app()->view->getSections()['type'];
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">Sobre</a></li>
+                <li><a href="/chat">Chat</a></li>
             </ul>
         </div>
 

@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::livewire('/', "home");
 
 Route::livewire('/about', "about");
+
+Route::livewire('/chat', "user.chat");
