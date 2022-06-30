@@ -15,7 +15,7 @@ $type = app()->view->getSections()['type'];
     <title>@yield('title')</title>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/bootstrap5/css/bootstrap.min.css') }}" />
-
+    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
     @livewireStyles
     @livewireScripts
 
@@ -28,14 +28,15 @@ $type = app()->view->getSections()['type'];
         <div class="menu">
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/about">Sobre</a></li>
                 <li><a href="/chat">Chat</a></li>
+                <li><a href="/about">Sobre</a></li>
             </ul>
         </div>
 
         <div class="content">
             @yield('content')
         </div>
+
 
         <div class="footer">
             &copy;Burrinho {{ date('Y') }}
