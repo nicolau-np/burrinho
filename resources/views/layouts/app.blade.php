@@ -25,7 +25,7 @@ $type = app()->view->getSections()['type'];
 <body>
     <div class="container">
 
-        @if ($type == 'login')
+        @if ($type == 'login' || $type == 'register')
             @yield('content')
         @else
             <div class="menu">

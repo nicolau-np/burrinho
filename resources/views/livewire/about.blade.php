@@ -5,5 +5,6 @@
     @section('type', $type)
 
 
-        {{$menu}}
+        <h3>{{ $menu }}</h3>
+
     </div>
