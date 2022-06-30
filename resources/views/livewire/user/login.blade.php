@@ -1,3 +1,8 @@
 <div>
-    {{-- If your happiness depends on money, you will never be happy with yourself. --}}
-</div>
+    @section('title', $title)
+    @section('menu', $menu)
+    @section('submenu', $submenu)
+    @section('type', $type)
+
+        {{ $menu }}
+    </div>

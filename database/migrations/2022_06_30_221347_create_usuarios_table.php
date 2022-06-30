@@ -18,9 +18,11 @@ class CreateUsuariosTable extends Migration
             $table->bigIncrements('id');
             $table->string('name')->unique();
             $table->string('email')->unique();
+            $table->string('acess');
             $table->text('password');
             $table->string('morada');
             $table->bigInteger('phone');
+            $table->string('online');
             $table->string('status');
             $table->timestamps();
         });

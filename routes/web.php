@@ -13,8 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::livewire('/', "home");
+Route::livewire('/', "home")->name('home')->middleware('auth');
 
 Route::livewire('/about', "about");
 
 Route::livewire('/chat', "user.chat");
+
+Route::group(['prefix' => "user"], function () {
+    Route::livewire('/login', "user.login")->name('login');
+});
