@@ -38,7 +38,13 @@
                             <p class="forget"><a href="/user/forget">Esqueceu Palavra-Passe</a></p>
                         </div>
                         <div class="col-md-12 col">
-                            <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <span wire:loading wire:target="submit">
+                                    <img src="{{ asset('assets/img/loading.gif') }}" style="height:30px; width:30px;" />
+                                </span>
+                                &nbsp;
+                                Entrar
+                            </button>
                         </div>
                         <div class="col-md-12 col">
                             <p class="create">Não possui uma conta? <a href="/user/register">Criar</a></p>

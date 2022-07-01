@@ -40,7 +40,8 @@
                     </div>
 
                     <div class="col-md-12 col">
-                        <input type="password" class="form-control" placeholder="Confirmar Palavra-Passe" wire:model="confirmpassword" />
+                        <input type="password" class="form-control" placeholder="Confirmar Palavra-Passe"
+                            wire:model="confirmpassword" />
                         @error('confirmpassword')
                             <span class="text-danger">{{ $message }}</span>
                         @enderror
@@ -61,7 +62,13 @@
                     </div>
 
                     <div class="col-md-12 col">
-                        <button type="submit" class="btn btn-primary btn-block">Salvar</button>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <span wire:loading wire:target="submit">
+                                <img src="{{ asset('assets/img/loading.gif') }}" style="height:30px; width:30px;" />
+                            </span>
+                            &nbsp;
+                            Salvar
+                        </button>
                     </div>
                     <div class="col-md-12 col">
                         <p class="create">Já possui uma conta? <a href="/user/login">Entrar</a></p>
